@@ -1,6 +1,6 @@
 from unittest import case
 
-from def_model import Member
+from model.def_model import Member
 
 member_list = []
 
