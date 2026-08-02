@@ -1,4 +1,4 @@
-from test01 import print_program, print_menu, working_process, get_menu_num
+from process import print_program, print_menu, working_process, get_menu_num
 
 while True:
     print_program()
