@@ -7,7 +7,7 @@ class Member:
         self.admin = admin
 
     def __str__(self):
-            return f"닉네임 : {self.nickname} | ID : {self.id} | 나이 : {self.age} | 회원등급 : {self.admin}"
+            return f"닉네임 : {self.nickname} | ID : {self.id} | 나이 : {self.age} | 관리자 : {self.admin}"
 
     def __repr__(self):
             return f" 닉네임 : {self.nickname}, 가입 ID : {self.id}"
