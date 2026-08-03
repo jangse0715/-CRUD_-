@@ -91,8 +91,8 @@ def save_members():
     for m in member_list:
         members_dict[m.id] = m.__dict__
 
-    with open("members.json", "w") as j:  # members.json은 파일명.확장자 / w는 쓰기모드 / members는 파일호출 변수
-        json.dump(members_dict, j)  # 'members_dict'의 정보(딕셔너리)를 JSON 형식으로 변환해서 members라는 파일에 저장
+    with open("members.json", "w") as j:  # members.json은 파일명.확장자 / w는 쓰기모드 / j는 파일호출 변수
+        json.dump(members_dict, j)  # 'members_dict'의 정보(딕셔너리)를 JSON 형식으로 변환해서 j라는 파일(members.json)에 저장
 
 
 # 객체 등록/ 회원가입
