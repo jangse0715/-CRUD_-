@@ -128,19 +128,18 @@ def log_in():
 # 객체 목록/ 회원목록 조회
 def get_member_list():
     print("\n가입한 회원들의 목록을 출력합니다.")
-    if member_list == []:
+    if members_dict == {}:
         print("가입된 회원이 없습니다. 회원을 등록해주세요.")
-    for idx, i in enumerate(member_list):
-        print(f"회원번호: {idx} | 닉네임: {i.nickname} | 가입 ID: {i.id}")
+    for i in members_dict:
+        print(f"회원 ID : {i} | 닉네임 : {members_dict[i]["nickname"]}")
 
 
 # 상세조회/ 등록회원 상세조회
 def get_member_info():
     print("\n===== 등록회원 상세조회 =====")
-    n = int(input("조회할 회원 번호를 입력하세요.   "))
-    m = member_list[n]
-    print(f"\n'{m.nickname}'님의 정보를 불러옵니다.")
-    print(m)  # str 호출
+    i = input("조회할 회원의 아이디를 입력하세요.\n")
+    print(f"'{members_dict[i]['nickname']}'님의 정보를 조회합니다.")
+    print(f"회원 ID : {i} | 닉네임 : {members_dict[i]["nickname"]} | 나이 : {members_dict[i]["age"]} | 관리자 : {members_dict[i]["admin"]}")
 
 
 # 삭제/ 회원등록 철회
