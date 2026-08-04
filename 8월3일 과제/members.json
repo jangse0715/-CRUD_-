@@ -1,1 +1,30 @@
-{"1": {"id": "1", "password": "1", "nickname": "1", "age": "1", "admin": true}, "2": {"id": "2", "password": "2", "nickname": "2", "age": "2", "admin": false}, "3": {"id": "3", "password": "3", "nickname": "3", "age": "3", "admin": false}}
+{
+  "2": {
+    "id": "2",
+    "password": "2",
+    "nickname": "2",
+    "age": "2",
+    "admin": false
+  },
+  "4": {
+    "id": "4",
+    "password": "4",
+    "nickname": "4",
+    "age": "4",
+    "admin": true
+  },
+  "wind": {
+    "id": "wind",
+    "password": "123",
+    "nickname": "바람",
+    "age": "22",
+    "admin": true
+  },
+  "fire": {
+    "id": "fire",
+    "password": "123",
+    "nickname": "불",
+    "age": "22",
+    "admin": true
+  }
+}
